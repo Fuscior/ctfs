@@ -1,0 +1,21 @@
+#https://play.picoctf.org/practice/challenge/104?category=3&page=1
+
+encoded_message = open("C:\\dev\\ctf\\picoctf24\\reverse\\easy\\01_transfomation\\enc", "r", encoding="utf-8").read()
+
+print("Encoded message: {}".format(encoded_message))
+print("Length of message: {}".format(len(encoded_message)))
+
+flag = ""
+
+for i in range(len(encoded_message)):
+    print(encoded_message[i])
+
+    char1= chr((ord(encoded_message[i]) >> 8 ))
+    char2= chr(encoded_message[i].encode('utf-16be')[-1])
+    print(char1)
+    print(char2)
+
+    flag+= char1
+    flag+= char2
+
+print("flag:", flag)
