@@ -1,0 +1,4 @@
+since on windows used:
+select-string "file" -pattern "pico"
+
+grep would be nicer if gitbash installed or on linux
