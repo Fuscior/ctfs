@@ -1,0 +1,10 @@
+#What does this bDNhcm5fdGgzX3IwcDM1 mean? I think it has something to do with bases.
+
+import base64
+
+string= "bDNhcm5fdGgzX3IwcDM1"
+
+decode= base64.b64decode(string)
+
+print(decode)
+print("flag: picoCTF{"+str(decode)+"}")

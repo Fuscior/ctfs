@@ -8,3 +8,5 @@ print(result)
 
 
 print("picoCTF{"+ result+ "}")
+
+#print isnt copy paste 0b needs to be removed
