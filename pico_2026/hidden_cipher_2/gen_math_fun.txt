@@ -1,0 +1,23 @@
+ival return
+
+param 2 rand() = % 10 + 1
+param 3 rand() = % 0xb
+
+param 1 
+	x= rand()
+	if (x % 3 == 0 ) 		//if divisabile by 3?
+		param 1 = param 2 + param 3
+	else if(x % 3 == 1) 		// remainer 1 ?
+		if(param2 < param 3)
+			param2=parma3
+			param3=param2
+		x = param2 - param3
+	else				//remainer 2?
+		param1 = 0x2a // 42 in decimal
+		x = param3 * param2
+	
+
+///////////////////////////////////
+encodeing 
+char = pram1 + offset * param 2
+		
